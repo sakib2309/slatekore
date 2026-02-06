@@ -1,0 +1,18 @@
+# Slatekore Package Files
+.venv/
+*.egg-info/
+__pycache__/
+*.pyc
+dist/
+build/
+
+# Test directories
+test-vault/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store

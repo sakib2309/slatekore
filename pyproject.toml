@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slatekore"
+version = "0.1.0"
+description = "AI Research Second Brain Starter Kit for Obsidian + Gemini CLI"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Mir Sakib" }
+]
+keywords = [
+    "obsidian",
+    "gemini",
+    "second-brain",
+    "ai-assistant",
+    "research",
+    "knowledge-management"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "click>=8.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+slatekore = "slatekore.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mirsakib/slatekore"
+Repository = "https://github.com/mirsakib/slatekore"
+Documentation = "https://github.com/mirsakib/slatekore#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/slatekore"]
