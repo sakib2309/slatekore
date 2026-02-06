@@ -860,21 +860,28 @@ You are an AI research assistant integrated into an Obsidian vault.
 12-Websites/       # Project pages, blogs
 ```
 
-## Workflows Available
-Use `/workflow-name` or reference `.agent/workflows/` for detailed instructions:
+## How to Use Commands
 
-### Core Commands
-- **/capture <url>** - Detect source type, create note with template, save in correct folder
-- **/summarize** - Generate summary based on source type
-- **/connect [[note]]** - Find and suggest connections
-- **/daily-setup** - Create today's daily note with tasks and focus
-- **/daily-digest** - End-of-day summary, update daily note
-- **/explore <topic>** - Search vault, identify gaps, suggest research
-- **/moc-create <topic>** - Create Map of Content for topic with 8+ notes
-- **/project-create <name>** - Create full project structure (folder, project.md, prd.md, system-design.md, kanban.md)
+**IMPORTANT**: Commands are natural language triggers, not CLI slash commands.
+
+Just tell me what you want in plain English:
+
+| Say This | What I'll Do |
+|----------|--------------|
+| "capture https://arxiv.org/abs/..." | Create paper note from URL |
+| "capture https://github.com/..." | Create repo note from URL |
+| "daily setup" or "start my day" | Create today's daily note |
+| "daily digest" or "end of day" | Summarize today's work |
+| "explore transformers" | Search vault for topic |
+| "connect this to other notes" | Find related notes |
+| "create MOC for diffusion" | Create Map of Content |
+| "create project video-editor" | Create full project structure |
+| "summarize this" | Generate summary |
+
+For detailed workflows, reference files in `.agent/workflows/`.
 
 ## URL Detection
-When user shares a URL:
+When you share a URL, I'll auto-detect the type:
 - `arxiv.org` → Paper (02-Papers/)
 - `huggingface.co/models/` → Model (09-Models/)
 - `huggingface.co/spaces/` → Space (10-Implementations/)

@@ -72,17 +72,20 @@ Open Terminal in Obsidian and run:
 gemini
 ```
 
-Then use these workflows:
+Then use natural language commands:
 
-| Command | Description |
-|---------|-------------|
-| `/capture <url>` | Capture any URL (ArXiv, HuggingFace, GitHub, YouTube) |
-| `/daily-setup` | Create today's daily note with tasks |
-| `/daily-digest` | End-of-day summary and review |
-| `/explore <topic>` | Research a topic across your vault |
-| `/connect [[note]]` | Find connections for a note |
-| `/moc-create <topic>` | Create Map of Content |
-| `/project-create <name>` | Create full project structure |
+| Say This | What Happens |
+|----------|--------------|
+| `capture https://arxiv.org/...` | Creates paper note |
+| `capture https://github.com/...` | Creates repo note |
+| `daily setup` | Creates today's daily note |
+| `daily digest` | End-of-day summary |
+| `explore transformers` | Search vault for topic |
+| `connect this to related notes` | Find connections |
+| `create MOC for diffusion` | Create Map of Content |
+| `create project my-project` | Create full project structure |
+
+> **Note**: These are natural language prompts, not CLI slash commands. Just tell the agent what you want!
 
 ## 📝 Templates Included
 
