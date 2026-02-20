@@ -22,10 +22,10 @@ Transform your Obsidian vault into an AI-powered research second brain. Slatekor
 
 ```bash
 # Option 1: Persistent installation (recommended)
-uv tool install slatekore --from git+https://github.com/sakib2309/slatekore.git
+uv tool install slatekore --from git+https://github.com/imperativelabs/slatekore.git
 
 # Option 2: One-time usage
-uvx --from git+https://github.com/sakib2309/slatekore.git slatekore init .
+uvx --from git+https://github.com/imperativelabs/slatekore.git slatekore init .
 ```
 
 ### Initialize Your Vault
