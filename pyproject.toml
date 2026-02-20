@@ -40,9 +40,9 @@ dependencies = [
 slatekore = "slatekore.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/sakib2309/slatekore"
-Repository = "https://github.com/sakib2309/slatekore"
-Documentation = "https://github.com/sakib2309/slatekore#readme"
+Homepage = "https://github.com/imperativelabs/slatekore"
+Repository = "https://github.com/imperativelabs/slatekore"
+Documentation = "https://github.com/imperativelabs/slatekore.git#readme"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/slatekore"]
